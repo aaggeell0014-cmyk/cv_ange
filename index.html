@@ -1,0 +1,259 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CV | Angel Emmanuel Martínez García</title>
+  <!-- ICONOS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <style>
+    :root{
+      --azul-claro:#4da3ff;
+      --azul-fuerte:#0a3d91;
+      --azul-fondo:#020b2d;
+      --glass:rgba(255,255,255,.10);
+      --blanco:#ffffff;
+      --gris:#e6ebf2;
+    }*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;}
+
+body{
+  font-family:'Inter', sans-serif;
+  background:linear-gradient(135deg,var(--azul-claro),var(--azul-fuerte));
+  color:var(--blanco);
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:60px 20px;
+}
+
+.hero-card{
+  max-width:1100px;
+  width:100%;
+  background:var(--glass);
+  backdrop-filter:blur(16px);
+  border-radius:28px;
+  padding:55px;
+  box-shadow:0 25px 60px rgba(0,0,0,.45);
+  animation:entrada 1.2s ease;
+}
+
+@keyframes entrada{
+  from{opacity:0;transform:translateY(40px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+.hero-card h1{
+  text-align:center;
+  font-size:2.4rem;
+  font-weight:700;
+  margin-bottom:40px;
+  letter-spacing:1px;
+}
+
+.hero-content{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:45px;
+  align-items:center;
+}
+
+/* FOTO */
+.foto{
+  display:flex;
+  justify-content:center;
+}
+
+.foto img{
+  width:100%;
+  max-width:300px;
+  height:420px;
+  object-fit:cover;
+  border-radius:20px;
+  border:3px solid var(--azul-claro);
+  box-shadow:0 0 35px rgba(77,163,255,.8);
+  transition:.4s;
+}
+
+.foto img:hover{
+  transform:scale(1.05);
+}
+
+/* FRASE */
+.frase{
+  font-size:1.35rem;
+  line-height:1.7;
+  color:var(--gris);
+  position:relative;
+  min-height:90px;
+}
+
+.frase::before{
+  content:"\201C";
+  font-size:4.5rem;
+  color:var(--azul-claro);
+  position:absolute;
+  left:-30px;
+  top:-25px;
+}
+
+/* MENU */
+nav.menu-hero{
+  margin-top:40px;
+  display:flex;
+  justify-content:center;
+  gap:18px;
+  flex-wrap:wrap;
+}
+
+nav.menu-hero a{
+  color:var(--blanco);
+  text-decoration:none;
+  padding:11px 26px;
+  border-radius:35px;
+  border:1px solid var(--azul-claro);
+  font-weight:500;
+  transition:.35s;
+  backdrop-filter:blur(5px);
+}
+
+nav.menu-hero a:hover{
+  background:var(--azul-claro);
+  color:#000;
+  transform:translateY(-3px);
+}
+
+/* SECCIONES */
+section{
+  max-width:1100px;
+  margin:90px auto;
+  padding:50px;
+  background:var(--glass);
+  backdrop-filter:blur(16px);
+  border-radius:28px;
+  box-shadow:0 20px 45px rgba(0,0,0,.4);
+  color:var(--gris);
+}
+
+h3{
+  color:var(--blanco);
+  margin-bottom:18px;
+  font-weight:600;
+  border-left:4px solid var(--azul-claro);
+  padding-left:12px;
+}
+
+ul{margin-left:25px;}
+li{margin-bottom:10px;}
+
+/* FOOTER */
+footer{
+  margin-top:80px;
+  padding:40px 20px 25px;
+  text-align:center;
+  background:rgba(0,0,0,.25);
+  backdrop-filter:blur(10px);
+}
+
+.sociales{
+  display:flex;
+  justify-content:center;
+  gap:30px;
+  margin-bottom:15px;
+}
+
+.sociales a{
+  font-size:2rem;
+  color:var(--blanco);
+  transition:.35s;
+}
+
+.sociales a:hover{
+  color:var(--azul-claro);
+  transform:scale(1.2);
+}
+
+footer p{
+  font-size:.9rem;
+  opacity:.7;
+}
+
+@media(max-width:900px){
+  .hero-content{grid-template-columns:1fr;}
+  .frase{text-align:center;}
+  .frase::before{left:50%;transform:translateX(-50%)}
+}
+
+  </style>
+</head>
+<body><section class="hero" id="inicio">
+  <div class="hero-card">
+    <h1>Angel Emmanuel Martínez García</h1><div class="hero-content">
+  <div class="foto">
+    <img src="C:\Users\Usuario\Documents\cv\imagen.jpg/2.jpeg" alt="Foto de Angel Emmanuel Martínez García">
+  </div>
+  <div class="frase" id="frase"></div>
+</div>
+
+<nav class="menu-hero">
+  <a href="#resumen">Resumen</a>
+  <a href="#experiencia">Experiencia</a>
+  <a href="#educacion">Educación</a>
+  <a href="#habilidades">Habilidades</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+  </div>
+</section><section id="resumen">
+  <h3>Resumen Profesional</h3>
+  <p>Soy una persona responsable y comprometida, con interés en el desarrollo web y la tecnología. Me gusta aprender de forma práctica y mejorar continuamente mis habilidades técnicas.</p>
+</section><section id="experiencia">
+  <h3>Experiencia Laboral</h3>
+  <p><strong>Reparación Santillana</strong> — Técnico</p>
+  <p>15/04/2023 – 26/05/2025</p>
+  <ul>
+    <li>Desarrollo de páginas web.</li>
+    <li>Reparación y mantenimiento de equipos de cómputo.</li>
+  </ul>
+</section><section id="educacion">
+  <h3>Educación</h3>
+  <p>Bachillerato concluido.</p>
+</section><section id="habilidades">
+  <h3>Habilidades</h3>
+  <ul>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>Python básico</li>
+  </ul>
+  <h3>Idiomas</h3>
+  <p>Español — Nativo</p>
+  <p>Inglés — Básico</p>
+</section><section id="contacto">
+  <h3>Contacto</h3>
+  <p>Email: aaggeell0014@gmail.com</p>
+  <p>Teléfono: 722 266 4532</p>
+  <p>Toluca, México</p>
+</section><footer>
+  <div class="sociales">
+    <a href="https://www.facebook.com/share/1MftT2Gcgh/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.instagram.com/emg_angel_15?igsh=aHA5NjYxcm5wZHU1" target="_blank"><i class="fab fa-instagram"></i></a>
+  </div>
+  <p>© CV creado por AEMG</p>
+</footer><script>
+  const texto = "El talento abre puertas, la actitud las mantiene abiertas.";
+  let i = 0;
+  function escribir(){
+    if(i < texto.length){
+      document.getElementById('frase').textContent += texto.charAt(i);
+      i++;
+      setTimeout(escribir, 45);
+    }
+  }
+  window.onload = escribir;
+</script></body>
+</html>
+
+
